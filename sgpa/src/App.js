@@ -8,7 +8,7 @@ import Textin from './components/Textin';
 function App() {
   return (
     <>
-        <Navbar title="SGPA Calculator" about="About" />
+        <Navbar title="SGPA Calculator"/>
       <div className="big-container">
 
         <Textin />
