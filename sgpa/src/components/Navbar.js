@@ -16,15 +16,21 @@ export default function Navbar(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-3 mb-lg-0">
+            
             <li className="nav-item">
-            <a className="nav-link " aria-current="page" href="/">ECE</a>
+            <Link className="nav-link " aria-current="page" to="/">ECE</Link>
             </li>
+
             <li className="nav-item">
-            <a className="nav-link " aria-current="page" href="/Cse">CSE</a>
+            <Link className="nav-link " aria-current="page" to="/Cse">CSE</Link>
             </li>
             
             <li className="nav-item">
-            
+            <Link className="nav-link " aria-current="page" to="/">Demo</Link>
+            </li>
+
+            <li className="nav-item">
+            <Link className="nav-link " aria-current="page" to="/">About</Link>
             </li>
           </ul>
         </div>

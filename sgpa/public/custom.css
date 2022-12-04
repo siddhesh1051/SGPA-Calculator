@@ -46,10 +46,10 @@ textarea {
     font-weight: 400;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
     color: aqua;
 
-}
+} */
 
 .btn {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -129,3 +129,26 @@ textarea {
     cursor: pointer;
     
 }
+
+
+  .nav-link::after {
+    content: '';
+    height: 4px;
+    width: 0%;
+    border-radius: 20%;
+    background: #0753c5;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+  }
+  
+   
+  .nav-link:hover::after {
+    
+    width: 100%;
+  }
+  
+  .nav-link.active:hover {
+    background-color: #0753c5;
+  }
+  .nav-link a.active { background-color: red; }
