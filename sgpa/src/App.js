@@ -3,24 +3,20 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Textin from './components/Textin';
+import Cse from './components/Cse';
 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
     <>
         <Navbar title="SGPA Calculator"/>
-      <div className="big-container">
-
-        <Textin />
-        {/* <Textin subject="Enter Analog Communication Grades Below:" />
-        <Textin subject="Enter Embedded System Grades Below:" />
-        <Textin subject="Enter Electronic Instrumentation Grades Below:" />
-        <Textin subject="Enter OOPs Grades Below:" /> */}
-      {/* <div className="btn-div">
-        <Button/>
-      </div> */}
-        
-      </div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Textin/>}/>
+            <Route path="/Cse" element={<Cse/>}/>
+          </Routes>
+        </Router>
 
     </>
 

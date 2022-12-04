@@ -87,7 +87,7 @@ export default function Textin(props) {
   return (
     <>
       <div className='container'>
-        <h3>Enter Waveguides and Antennas Grades Below:</h3>
+        <h3>Enter DBMS Grades Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} placeholder="Enter Grade " rows="1"></textarea>
         </div>
