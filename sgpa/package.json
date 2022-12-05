@@ -1,0 +1,52 @@
+<<<<<<< HEAD
+{ "homepage": "http://siddhesh1051.github.io/SGPA-Calculator",
+=======
+{
+>>>>>>> parent of 4690a05 (Updates)
+  "name": "sgpa",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cra-template": "1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.0.0",
+    "react-scripts": "5.0.1",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.6.15"
+  },
+  "scripts": {
+<<<<<<< HEAD
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+
+=======
+    "start": "react-scripts start",
+>>>>>>> parent of 4690a05 (Updates)
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "web-vitals": "^3.1.0"
+  }
+}
