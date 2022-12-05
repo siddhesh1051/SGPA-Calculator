@@ -1,9 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import img1 from './image/trophy.svg';
+// import img1 from './image/trophy.svg';
 import swal from 'sweetalert';
 import { Link } from 'react-router-dom'
-
 
 
 
@@ -18,13 +17,13 @@ export default function Textin(props) {
   const arr = [0, 0, 0, 0, 0];
 
 
-  let popup = document.getElementById("popup");
-  const openPopup = () => {
-    popup.classList.add("open-popup");
-  }
-  const closePopup = () => {
-    popup.classList.remove("open-popup");
-  }
+  // let popup = document.getElementById("popup");
+  // // const openPopup = () => {
+  // //   popup.classList.add("open-popup");
+  // // }
+  // const closePopup = () => {
+  //   popup.classList.remove("open-popup");
+  // }
 
 
   const handleOnChange1 = (event) => {
@@ -71,8 +70,8 @@ export default function Textin(props) {
   }
 
   const handleOnClick = () => {
-    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 4 * Number(Text5);
-    let tempans = numerator / 19;
+    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 3 * Number(Text5);
+    let tempans = numerator / 18;
     let ans = Math.round(tempans * 100) / 100;
     let toShow = "Your SGPA is: " + ans +" 🎉";
     swal({
@@ -92,7 +91,7 @@ export default function Textin(props) {
       <div className='container'>
         <h3>Enter Waveguides and Antennas Grades Below:</h3>
         <div className="text-box mb-3">
-          <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} onLoad={openPopup} placeholder="Enter Grade " rows="1"></textarea>
+          <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
@@ -118,7 +117,7 @@ export default function Textin(props) {
 
       </div>
       <div className='container'>
-        <h3>Enter OOPs Grades Below:(For DSA/TC <Link  to="/dsa">Click Here</Link>)</h3>
+        <h3>Enter DSA/TC Grades Below:(For OOPs <Link  to="/">Click Here</Link>)</h3>
         
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text5} onChange={handleOnChange5} placeholder="Enter Grade " rows="1"></textarea>
@@ -131,13 +130,13 @@ export default function Textin(props) {
 
         <button className="btn btn-primary " onClick={handleOnClick}>Calculate</button>
       </div>
-      <div className="popup" id='popup'>
+      {/* <div className="popup" id='popup'>
         <img src={img1} alt="" />
         <h2>Congrats🎉</h2>
 
         <button type='button' className='btn' onClick={closePopup}>Ok</button>
 
-      </div>
+      </div> */}
     </>
 
   )

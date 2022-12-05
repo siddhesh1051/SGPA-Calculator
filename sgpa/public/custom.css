@@ -16,7 +16,7 @@ textarea {
 .container {
     float: left;
     font-family: 'Poppins', sans-serif;
-    margin-left: 5rem;
+    margin-left: 3.5%;
     margin-top: 0.8rem;
     padding: 6px;
     padding-bottom: 0px;
@@ -151,4 +151,30 @@ textarea {
   .nav-link.active:hover {
     background-color: #0753c5;
   }
-  .nav-link a.active { background-color: red; }
+
+  .about-div{
+    margin-top: 1rem;
+    margin-left: 4%;
+  }
+
+  #linkedin{
+            background-color: #0077b5;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+  }
+  #github{
+            background-color: #000b10;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+  }
+  #instagram{
+            background-color: #bc2a8d;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+  }
