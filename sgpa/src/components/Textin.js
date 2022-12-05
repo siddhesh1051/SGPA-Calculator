@@ -118,7 +118,7 @@ export default function Textin(props) {
 
       </div>
       <div className='container'>
-        <h3>Enter OOPs Grade Points Below:(For DSA/TC <Link  to="/dsa">Click Here</Link>)</h3>
+        <h3>Enter OOPs Grade Points Below(For DSA/TC <Link  to="/dsa">Click Here</Link>):</h3>
         
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text5} onChange={handleOnChange5} placeholder="Enter Grade " rows="1"></textarea>

@@ -116,7 +116,7 @@ export default function Embedded(props) {
 
       </div>
       <div className='container'>
-        <h3>Enter Embedded System Grade Points Below:(For TC/PE <Link  to="/Cse">Click Here</Link>)</h3>
+        <h3>Enter Embedded System Grade Points Below(For TC/PE <Link  to="/Cse">Click Here</Link>):</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text5} onChange={handleOnChange5} placeholder="Enter Grade " rows="1"></textarea>
         </div>

@@ -116,7 +116,7 @@ export default function Cse(props) {
 
       </div>
       <div className='container'>
-        <h3>Enter TC/PE Grade Points Below:(For Embedded System <Link  to="/embedded">Click Here</Link>)</h3>
+        <h3>Enter TC/PE Grade Points Below(For Embedded System <Link  to="/embedded">Click Here</Link>):</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text5} onChange={handleOnChange5} placeholder="Enter Grade " rows="1"></textarea>
         </div>
