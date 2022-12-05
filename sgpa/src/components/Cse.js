@@ -2,10 +2,11 @@ import React from 'react'
 import { useState } from 'react';
 // import img1 from './image/trophy.svg';
 import swal from 'sweetalert';
+import { Link } from 'react-router-dom'
 
 
 
-export default function Textin(props) {
+export default function CSE(props) {
   const [Text1, setText1] = useState("");
   const [Text2, setText2] = useState("");
   const [Text3, setText3] = useState("");
@@ -68,8 +69,8 @@ export default function Textin(props) {
   }
 
   const handleOnClick = () => {
-    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 4 * Number(Text5);
-    let tempans = numerator / 19;
+    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 3 * Number(Text5);
+    let tempans = numerator / 18;
     let ans = Math.round(tempans * 100) / 100;
     let toShow = "Your SGPA is: " + ans +" 🎉";
     swal({
@@ -87,35 +88,35 @@ export default function Textin(props) {
   return (
     <>
       <div className='container'>
-        <h3>Enter DBMS Grades Below:</h3>
+        <h3>Enter DBMS Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Analog Communication Grades Below:</h3>
+        <h3>Enter Computer Networks Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text2} onChange={handleOnChange2} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Embedded System Grades Below:</h3>
+        <h3>Enter Theory of Computation Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text3} onChange={handleOnChange3} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Electronic Instrumentation Grades Below:</h3>
+        <h3>Enter Cloud Computing Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text4} onChange={handleOnChange4} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter OOPs Grades Below:</h3>
+        <h3>Enter TC/PE Grade Points Below:(For Embedded System <Link  to="/embedded">Click Here</Link>)</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text5} onChange={handleOnChange5} placeholder="Enter Grade " rows="1"></textarea>
         </div>

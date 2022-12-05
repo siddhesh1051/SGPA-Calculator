@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 
-
-export default function DSA(props) {
+export default function Embedded(props) {
   const [Text1, setText1] = useState("");
   const [Text2, setText2] = useState("");
   const [Text3, setText3] = useState("");
@@ -70,8 +69,8 @@ export default function DSA(props) {
   }
 
   const handleOnClick = () => {
-    let numerator = 4 * ( Number(Text2) + Number(Text3)) + 3 *( Number(Text1) +Number(Text4) )+ 3 * Number(Text5);
-    let tempans = numerator / 17;
+    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 3 * Number(Text5);
+    let tempans = numerator / 18;
     let ans = Math.round(tempans * 100) / 100;
     let toShow = "Your SGPA is: " + ans +" 🎉";
     swal({
@@ -89,39 +88,37 @@ export default function DSA(props) {
   return (
     <>
       <div className='container'>
-        <h3>Enter Waveguides and Antennas Grade Points Below:</h3>
+        <h3>Enter DBMS Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Analog Communication Grade Points Below:</h3>
+        <h3>Enter Computer Networks Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text2} onChange={handleOnChange2} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Embedded System Grade Points Below:</h3>
+        <h3>Enter Theory of Computation Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text3} onChange={handleOnChange3} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Electronic Instrumentation Grade Points Below:</h3>
+        <h3>Enter Cloud Computing Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text4} onChange={handleOnChange4} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter DSA/TC Grade Points Below:(For OOPs <Link  to="/">Click Here</Link>)</h3>
-        
+        <h3>Enter Embedded System Grade Points Below:(For TC/PE <Link  to="/Cse">Click Here</Link>)</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text5} onChange={handleOnChange5} placeholder="Enter Grade " rows="1"></textarea>
-          
         </div>
 
       </div>

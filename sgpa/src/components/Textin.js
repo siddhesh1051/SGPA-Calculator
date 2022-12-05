@@ -71,8 +71,8 @@ export default function Textin(props) {
   }
 
   const handleOnClick = () => {
-    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 4 * Number(Text5);
-    let tempans = numerator / 19;
+    let numerator = 4 * (Number(Text2) + Number(Text3)) + 3 *(Number(Text1) + Number(Text4))+ 4 * Number(Text5);
+    let tempans = numerator / 18;
     let ans = Math.round(tempans * 100) / 100;
     let toShow = "Your SGPA is: " + ans +" 🎉";
     swal({
@@ -90,35 +90,35 @@ export default function Textin(props) {
   return (
     <>
       <div className='container'>
-        <h3>Enter Waveguides and Antennas Grades Below:</h3>
+        <h3>Enter Waveguides and Antennas Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} onLoad={openPopup} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Analog Communication Grades Below:</h3>
+        <h3>Enter Analog Communication Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text2} onChange={handleOnChange2} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Embedded System Grades Below:</h3>
+        <h3>Enter Embedded System Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text3} onChange={handleOnChange3} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter Electronic Instrumentation Grades Below:</h3>
+        <h3>Enter Electronic Instrumentation Grade Points Below:</h3>
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text4} onChange={handleOnChange4} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
       <div className='container'>
-        <h3>Enter OOPs Grades Below:(For DSA/TC <Link  to="/dsa">Click Here</Link>)</h3>
+        <h3>Enter OOPs Grade Points Below:(For DSA/TC <Link  to="/dsa">Click Here</Link>)</h3>
         
         <div className="text-box mb-3">
           <textarea className="form-control" id="myBox" value={Text5} onChange={handleOnChange5} placeholder="Enter Grade " rows="1"></textarea>
