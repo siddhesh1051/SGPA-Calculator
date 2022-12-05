@@ -69,8 +69,8 @@ export default function Embedded(props) {
   }
 
   const handleOnClick = () => {
-    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 3 * Number(Text5);
-    let tempans = numerator / 18;
+    let numerator = 4 * (Number(Text1) + Number(Text2) + Number(Text3)) + 3 * Number(Text4) + 4 * Number(Text5);
+    let tempans = numerator / 19;
     let ans = Math.round(tempans * 100) / 100;
     let toShow = "Your SGPA is: " + ans +" 🎉";
     swal({

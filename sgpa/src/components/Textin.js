@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import img1 from './image/trophy.svg';
+// import img1 from './image/trophy.svg';
 import swal from 'sweetalert';
 import { Link } from 'react-router-dom'
 
@@ -18,13 +18,13 @@ export default function Textin(props) {
   const arr = [0, 0, 0, 0, 0];
 
 
-  let popup = document.getElementById("popup");
-  const openPopup = () => {
-    popup.classList.add("open-popup");
-  }
-  const closePopup = () => {
-    popup.classList.remove("open-popup");
-  }
+  // let popup = document.getElementById("popup");
+  // const openPopup = () => {
+  //   popup.classList.add("open-popup");
+  // }
+  // const closePopup = () => {
+  //   popup.classList.remove("open-popup");
+  // }
 
 
   const handleOnChange1 = (event) => {
@@ -92,7 +92,7 @@ export default function Textin(props) {
       <div className='container'>
         <h3>Enter Waveguides and Antennas Grade Points Below:</h3>
         <div className="text-box mb-3">
-          <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} onLoad={openPopup} placeholder="Enter Grade " rows="1"></textarea>
+          <textarea className="form-control" id="myBox" value={Text1} onChange={handleOnChange1} placeholder="Enter Grade " rows="1"></textarea>
         </div>
 
       </div>
@@ -131,13 +131,13 @@ export default function Textin(props) {
 
         <button className="btn btn-primary " onClick={handleOnClick}>Calculate</button>
       </div>
-      <div className="popup" id='popup'>
+      {/* <div className="popup" id='popup'>
         <img src={img1} alt="" />
         <h2>Congrats🎉</h2>
 
         <button type='button' className='btn' onClick={closePopup}>Ok</button>
 
-      </div>
+      </div> */}
     </>
 
   )

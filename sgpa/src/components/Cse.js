@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 
-export default function CSE(props) {
+export default function Cse(props) {
   const [Text1, setText1] = useState("");
   const [Text2, setText2] = useState("");
   const [Text3, setText3] = useState("");
