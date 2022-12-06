@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
     <div className='about-div'>
-          <h1>Made by Siddhesh Patil</h1>
+          <h1 id='name'>Made by Siddhesh Patil</h1>
           <a
           className="btn btn-primary btn-lg btn-floating"
           id='linkedin'
